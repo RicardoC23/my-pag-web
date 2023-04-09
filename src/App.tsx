@@ -1,12 +1,12 @@
 import { useState } from 'react'
-
+import { Header } from './Componets/header'
 
 function App() {
   
   return (
-    <div className="App">
-      <h1>Hola Mundo</h1>
-    </div>
+    <>
+      <Header/>
+    </>
   )
 }
 
