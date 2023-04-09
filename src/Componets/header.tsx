@@ -10,11 +10,13 @@ function Header() {
                     />
                     <h4>WEB DEVELOPER - FULL STACK</h4>
                     <div>
-                        <button>HOME</button>
-                        <button>ABOUT ME</button>
-                        <button>BLOG</button>
-                        <button>MY PASSION</button>
-                        <button>CONTACT</button>
+                        <ul>
+                            <li><a href="Home">HOME</a></li>
+                            <li><a href="Aboute.me">ABOUTE ME</a></li>
+                            <li><a href="Blog">BLOG</a></li>
+                            <li><a href="My-Passion">MY PASSION</a></li>
+                            <li><a href="Contact">CONTACT</a></li>
+                        </ul>
                     </div>
                     <div>
                         <select >
@@ -25,9 +27,6 @@ function Header() {
                 </div>
             </header>
         </div>
-
-        
-
     );
 };
 
