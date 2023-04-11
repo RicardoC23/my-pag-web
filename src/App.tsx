@@ -1,7 +1,8 @@
-import { useState } from 'react'
+
 import { Header } from './Componets/header'
 import { Hero } from './Componets/Hero'
 import { Section } from './Componets/Section'
+import { Footer } from './Componets/Footer'
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
       <Header/>
       <Hero/>
       <Section/>
+      <Footer/>
     </>
   )
 }
