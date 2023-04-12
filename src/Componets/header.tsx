@@ -1,31 +1,31 @@
+import "./header.css"
 
 function Header() {
     return (
-        <div className="container-header">
-            <header>
-                <div className="logo-title">
-                    <img
-                    src = {'../Pictures/logoRicardo.jpg'}
-                    />
-                    <h4>WEB DEVELOPER - FULL STACK</h4>
+            <header className="header-container">
+                <div className="container-nav">
                     <div>
-                        <ul>
+                        <h4>WEB DEVELOPER - FULL STACK</h4>
+                    </div>
+                    <div>
+                        <img className="nav-img"src = {'../Pictures/Dragon.svg.png'}/>
+                    </div>
+                    <div className="containe-option">
+                        <ul className="container-ul">
                             <li><a href="Home">HOME</a></li>
                             <li><a href="Aboute.me">ABOUTE ME</a></li>
                             <li><a href="Blog">BLOG</a></li>
-                            <li><a href="My-Passion">MY PASSION</a></li>
                             <li><a href="Contact">CONTACT</a></li>
                         </ul>
-                    </div>
-                    <div>
-                        <select >
-                            <option>Español</option>
-                            <option>English</option>
-                        </select>
+                        <div className="Select-container">
+                            <select className="select-language">
+                                <option>Español</option>
+                                <option>English</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </header>
-        </div>
     );
 };
 
