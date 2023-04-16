@@ -1,0 +1,76 @@
+.container-hero {
+    height: calc(100vh - 92px);
+    background-image: url('../Pictures/escritorio.webp');
+    background-size: cover;
+    background-position:center center;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-hero-text {
+    color: #fff;
+    padding: 0px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    align-self: flex-start;
+}
+
+.info-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    align-self: flex-end;
+    position: relative;
+    top: -1rem;
+    left: 5.5rem;
+    gap: 2rem;
+}
+
+.info-container h2 {
+    align-self: center;
+}
+
+.container-datos {
+    display: flex;
+    align-self: center;
+    gap: 2rem;
+}
+
+.datos-from {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-datos a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container-redes {
+    display: flex;
+    gap: 2rem;
+    font-size: 2.5rem; 
+    align-self: center;  
+}
+
+.container-redes a {
+    color: #fff;
+}
+
+
+img {
+    width: 200px;
+    height: 200px;
+}
