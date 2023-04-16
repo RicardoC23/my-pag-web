@@ -1,8 +1,8 @@
 
-import { Header } from './Componets/header'
-import { Hero } from './Componets/Hero'
-import { Section } from './Componets/Section'
-import { Footer } from './Componets/Footer'
+import { Header } from './Componets/Header/header'
+import { Hero } from './Componets/Hero/Hero'
+import { Section } from './Componets/Section/Section'
+import { Footer } from './Componets/Footer/Footer'
 
 function App() {
   
