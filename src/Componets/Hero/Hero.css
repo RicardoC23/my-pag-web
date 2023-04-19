@@ -4,73 +4,40 @@
     background-size: cover;
     background-position:center center;
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    justify-content: end;
+    align-items:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.container-hero-text {
-    color: #fff;
-    padding: 0px;
-    position: relative;
-    top: 10px;
-    left: 20px;
-    align-self: flex-start;
-}
-
 .info-container {
-    color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    align-self: flex-end;
     position: relative;
-    top: -1rem;
-    left: 5.5rem;
-    gap: 2rem;
+    top: 5em;
+    right: 1.5em;
+    color: #fff;
+    gap: 1.5em;
 }
 
 .info-container h2 {
     align-self: center;
+    font-size: 2.5rem;
 }
 
-.container-datos {
-    display: flex;
+.info-container h3 {
     align-self: center;
-    gap: 2rem;
+    font-size: 1.5rem;
 }
 
-.datos-from {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.datos-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.container-datos a {
+.button-contact {
+    align-self: center;
     color: #fff;
+    padding: 12px 36px;
+    margin: 10px 0;
     text-decoration: none;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#010102,#000000);
 }
 
-.container-redes {
-    display: flex;
-    gap: 2rem;
-    font-size: 2.5rem; 
-    align-self: center;  
-}
-
-.container-redes a {
-    color: #fff;
-}
-
-
-img {
-    width: 200px;
-    height: 200px;
-}
