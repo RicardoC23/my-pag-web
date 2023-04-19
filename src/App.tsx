@@ -1,8 +1,8 @@
 
 import { Header } from './Componets/Header/header'
 import { Hero } from './Componets/Hero/Hero'
-import { Section } from './Componets/Section/Section'
 import { Footer } from './Componets/Footer/Footer'
+import { About } from './Componets/About-me/About'
 
 function App() {
   
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header/>
       <Hero/>
-      <Section/>
+      <About/>
       <Footer/>
     </>
   )

@@ -1,4 +1,4 @@
-import { FaTwitter, FaLinkedinIn, FaGithub, FaInstagram, FaAlignJustify } from "react-icons/fa";
+import { FaTwitter, FaLinkedinIn, FaGithub, FaAlignJustify } from "react-icons/fa";
 import "./header.css"
 
 function Header():JSX.Element {
@@ -10,17 +10,16 @@ function Header():JSX.Element {
                     </div>
                     <div className="containe-option"> <FaAlignJustify className="barra-contenido"/> 
                         <ul className="container-ul">
-                            <li><a href="Home">Home</a></li>
-                            <li><a href="Aboute">book</a></li>
-                            <li><a href="Blog">portfolio</a></li>
-                            <li><a href="Contact">contact</a></li>
+                            <li><a href="Home">About me</a></li>
+                            <li><a href="Aboute">Skills</a></li>
+                            <li><a href="Blog">Portfolio</a></li>
+                            <li><a href="Contact">Contact</a></li>
                         </ul>
                         <div className="redes-container">
                             <div className="container-social">
-                                <div><a href="twiter.com"><FaTwitter/></a></div>
                                 <div><a href="linkidin.com"><FaLinkedinIn/></a></div>
                                 <div><a href="facebook.com"><FaGithub/></a></div>
-                                <div><a href="Instagram.com"><FaInstagram/></a></div>
+                                <div><a href="twiter.com"><FaTwitter/></a></div>
                             </div>
                         </div>
                     </div>
