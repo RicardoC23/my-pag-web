@@ -1,0 +1,55 @@
+.tech {
+    height: calc(100vh - 110px);
+    background-image: url('../Pictures/tech.jpg');
+    background-size: cover;
+    background-position:center center;
+    border-top: 3px solid #bec0b4;
+}
+
+.container-tech {
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container-tech-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+    gap: 1rem;
+}
+
+.container-tech-text p {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.container-tech-skill {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 2.5rem;
+    position: relative;
+    left: 2rem;
+}
+
+.nav-img-tech {
+    width: 100px;
+    height: 100px;
+}
+
+
+.container-tech-skill p {
+    width: 5.625rem;
+    color: #fff;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    
+}
