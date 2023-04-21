@@ -1,5 +1,5 @@
 .tech {
-    height: calc(100vh - 110px);
+    min-height: 470px;
     background-image: url('../Pictures/tech.jpg');
     background-size: cover;
     background-position:center center;
@@ -7,11 +7,12 @@
 }
 
 .container-tech {
-    height: 470px;
+    min-height: 470px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:2rem 0;
     gap: 5rem;
 }
 
