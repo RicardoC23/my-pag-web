@@ -14,7 +14,7 @@ function Footer() {
                 <div>
                     <ul>
                         <li><FaMobileAlt/><p> +51 940540123</p></li>
-                        <li><FaEnvelope/><p>ricardo.mamani403@gamil.com</p></li>
+                        <li><FaEnvelope/><p>ricardo.mamani403@gmail.com</p></li>
                     </ul>
                 </div>
             </div>

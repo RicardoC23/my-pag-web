@@ -1,0 +1,159 @@
+.container-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+    padding: 3rem 0;
+}
+
+.container-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem 1rem;
+}
+
+.container-redes-tex {
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+    text-align: start;
+    letter-spacing: 2px;
+    gap: 1rem;
+}
+
+.container-redes-tex h1 {
+    color: #333333;
+    font-size: 5.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.container-redes-contact {
+    max-width: 20.62rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap:3rem;
+}
+
+.container-redes-contact p {
+    font-size:1.5rem ;
+}
+
+.twitter a {
+    display: flex;
+    font-size:2.5rem ;
+    color: #189ACD;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.facebook a {
+    display: flex;
+    font-size:2.5rem ;
+    color: #43609c;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.instagram a {
+    display: flex;
+    font-size:2.5rem ;
+    color: #ef0074;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkedln a {
+    display: flex;
+    font-size:2.5rem ;
+    color: #0982c0;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+
+
+.Container-contact {
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container-form-text h1 {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.container-contact-message {
+    display: flex;
+    background: #000000BF;
+    flex-direction: column;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 460px;
+    margin:0 auto;
+    padding: 60px 68px 40px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-input {
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height:18px;
+    line-height: 50px;
+    padding: 16px 20px ;
+    background: #333;
+    text-align: start;
+    font-size: 16px;
+}
+
+.form-text{
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    height:82px;
+    line-height: 50px;
+    padding: 16px 20px ;
+    background: #333;
+    text-align: start;
+    font-size: 16px;
+}
+
+.button-send {
+    border: #333;
+    border-radius: 4px ;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 24px 0 12px;
+    height: 48px ;
+    cursor: pointer;
+    background: #333;
+    color: white ;
+    font-size: 16px;
+    font-weight: 800;
+}
