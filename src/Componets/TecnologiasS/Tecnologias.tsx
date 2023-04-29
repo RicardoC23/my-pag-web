@@ -6,7 +6,6 @@ function Tecnologias() {
         <div className='container-tech'>
             <h2 className='container-tech-text'>
                 Tech-Skills
-                <p>My knowledge</p>
             </h2>
             <div className='container-tech-skill'>
                 <div>

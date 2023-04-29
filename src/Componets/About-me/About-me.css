@@ -1,12 +1,15 @@
 .img-about {
-    width: 12.5rem;
-    height: 11rem;
-    border-radius: 40%;
+    width: 15.5rem;
+    border-radius: 38%;
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
 }
 
 .container-About{
-    background-color: #231f1b ;
-    color: #fff;
+    background-color: #fff ;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    color: #333333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +17,11 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     gap: 3rem;
+}
+
+.container-About h1 {
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 2.4rem);
 }
 
 .container-section {
@@ -27,14 +35,21 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    color: #fff;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-weight: 600;
     gap: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .container-text h2 {
+    color: #333333;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     text-align: center;
+    font-weight: 900;
+    font-size: clamp(1.2rem, 5vw, 1.7rem);
+
 }
 
 .container-story {
@@ -62,4 +77,10 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .container-text {
+        width: 100%;
+    }
 }

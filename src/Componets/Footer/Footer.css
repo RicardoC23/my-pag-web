@@ -1,0 +1,39 @@
+.container-footer {
+    background-color: #161515 ;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.footer-text span {
+    color:bisque;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer-text p {
+    letter-spacing: 2px;
+}
+
+.copyright-content p {
+    letter-spacing: 0.5px;
+}
+
+.whatsapp {
+    font-size: 2rem;
+    color: #25D366;
+}
+
+@media screen and (max-width: 600px) {
+    .container-footer {
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 179px;
+        padding: 20px;
+    }
+
+}
