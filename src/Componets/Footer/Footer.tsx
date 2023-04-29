@@ -1,22 +1,22 @@
-import React from 'react'
-import { FaFacebook, FaTwitter, FaGithub, FaInstagram, FaEnvelope, FaMobileAlt} from "react-icons/fa"
+import './Footer.css'
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa"
 
 function Footer() {
     return (
-        <footer>
-            <div>
-                <div>
-                    <div><a href="facebook.com">< FaFacebook/></a></div>
-                    <div><a href="twiter.com"><FaTwitter/></a></div>
-                    <div><a href="Github.com"><FaGithub/></a></div>
-                    <div><a href="Instagram.com"><FaInstagram/></a></div>
-                </div>
-                <div>
-                    <ul>
-                        <li><FaMobileAlt/><p> +51 940540123</p></li>
-                        <li><FaEnvelope/><p>ricardo.mamani403@gmail.com</p></li>
-                    </ul>
-                </div>
+        <footer className='container-footer'>
+            <div className='footer-text'>
+                <span>Call me:</span>
+                <p>+51 940540123</p>
+            </div>
+            <div className='footer-text'>
+                <span>Find me:</span>
+                <p>Perú-Arequipa</p>
+            </div>
+            <div className='copyright-content'>
+                <p>Copyright © 2023 by Ricardo. </p>
+            </div>
+            <div className='container-whatsapp'>
+                    <a href="whatsapp" className='whatsapp'><FaWhatsapp/></a>
             </div>
         </footer>
     )

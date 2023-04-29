@@ -27,7 +27,7 @@
 
 .container-redes-tex h1 {
     color: #333333;
-    font-size: 5.2rem;
+    font-size: clamp(3rem, 8vw, 5.2rem);
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -47,7 +47,7 @@
 
 .twitter a {
     display: flex;
-    font-size:2.5rem ;
+    font-size: clamp(1rem, 8vw, 2.5rem);
     color: #189ACD;
     gap: 0.5rem;
     justify-content: center;
@@ -57,7 +57,7 @@
 
 .facebook a {
     display: flex;
-    font-size:2.5rem ;
+    font-size: clamp(1rem, 8vw, 2.5rem);
     color: #43609c;
     gap: 0.5rem;
     justify-content: center;
@@ -67,7 +67,7 @@
 
 .instagram a {
     display: flex;
-    font-size:2.5rem ;
+    font-size: clamp(1rem, 8vw, 2.5rem);
     color: #ef0074;
     gap: 0.5rem;
     justify-content: center;
@@ -77,17 +77,13 @@
 
 .linkedln a {
     display: flex;
-    font-size:2.5rem ;
+    font-size: clamp(1rem, 8vw, 2.5rem);
     color: #0982c0;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
-
-
-
-
 
 .Container-contact {
     font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
@@ -98,7 +94,7 @@
 
 .container-form-text h1 {
     color: #333333;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -109,7 +105,7 @@
     flex-direction: column;
     border-radius: 4px;
     box-sizing: border-box;
-    width: 460px;
+    width: 100%;
     margin:0 auto;
     padding: 60px 68px 40px;
 }
@@ -156,4 +152,10 @@
     color: white ;
     font-size: 16px;
     font-weight: 800;
+}
+
+@media screen and (max-width:430px ) {
+    .container-contact-message {
+        padding: 47px 29px 40px;
+    }
 }

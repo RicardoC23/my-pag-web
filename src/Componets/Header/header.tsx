@@ -1,4 +1,5 @@
 import { FaTwitter, FaLinkedinIn, FaGithub, FaAlignJustify } from "react-icons/fa";
+import { useState } from 'react';
 import "./header.css"
 
 function Header():JSX.Element {

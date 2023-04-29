@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaInstagram} from "react-icons/fa"
+
 import './Hero.css'
 
     function Hero() {
