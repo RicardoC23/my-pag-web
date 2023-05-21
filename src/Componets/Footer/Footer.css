@@ -1,39 +1,90 @@
 .container-footer {
-    background-color: #161515 ;
-    height: 100px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    background-color: #111111;
+    height: auto;
+}
+
+.container-footer div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    grid-gap: 10px;
+    text-align: center;
     color: #fff;
+    gap: 1.3rem;
+    padding: 0.5rem 0;
+    margin: auto;
 }
 
-.footer-text span {
-    color:bisque;
-    font-size: 1.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+.container-follow{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
 }
 
-.footer-text p {
+.container-direction{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.container-direction a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+}
+
+.twitter a {
+    display: flex;
+    font-size: clamp(1rem, 8vw, 2rem);
+    color: #fff;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.facebook a {
+    display: flex;
+    font-size: clamp(1rem, 8vw, 2rem);
+    color: #fff;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.instagram a {
+    display: flex;
+    font-size: clamp(1rem, 8vw, 2rem);
+    color: #fff;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkedln a {
+    display: flex;
+    font-size: clamp(1rem, 8vw, 2rem);
+    color: #fff;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+span {
     letter-spacing: 2px;
+    font-size: clamp(0.5rem, 4vh, 1rem);
 }
 
-.copyright-content p {
-    letter-spacing: 0.5px;
-}
-
-.whatsapp {
-    font-size: 2rem;
-    color: #25D366;
-}
-
-@media screen and (max-width: 600px) {
-    .container-footer {
-        grid-template-columns: repeat(2, 1fr);
-        min-height: 179px;
-        padding: 20px;
+@media screen and (max-width: 670px) {
+    .container-direction{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    
     }
-
 }

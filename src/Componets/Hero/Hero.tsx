@@ -12,7 +12,7 @@ import './Hero.css'
             <h3>
                 Transform design into an exceptional experience.
             </h3>
-            <a href="Contact" className="button-contact">Contact</a>
+            <a href="#Contact" className="button-contact">Contact</a>
         </div>
     </div>
     )

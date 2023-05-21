@@ -1,22 +1,18 @@
 import './Footer.css'
-import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa"
+import { FaLinkedinIn, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function Footer() {
     return (
         <footer className='container-footer'>
-            <div className='footer-text'>
-                <span>Call me:</span>
-                <p>+51 940540123</p>
-            </div>
-            <div className='footer-text'>
-                <span>Find me:</span>
-                <p>Perú-Arequipa</p>
-            </div>
-            <div className='copyright-content'>
-                <p>Copyright © 2023 by Ricardo. </p>
-            </div>
-            <div className='container-whatsapp'>
-                    <a href="whatsapp" className='whatsapp'><FaWhatsapp/></a>
+            <div>
+                
+                <ul className='container-follow'>
+                    <li className='linkedln'><a href="linkidin.com"><FaLinkedinIn/></a></li>
+                    <li className='facebook'><a href="facebook.com">< FaFacebook/></a></li>
+                    <li className='instagram'><a href="Instagram.com"><FaInstagram/></a></li>
+                    <li className='twitter'><a href="Twitter.com"><FaTwitter/></a></li>
+                </ul>
+                <span>&copy;2023,RicardoDeveloper. All rights reserved.</span>
             </div>
         </footer>
     )
