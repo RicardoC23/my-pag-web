@@ -1,6 +1,6 @@
 .tech {
     min-height: 470px;
-    border-top: 3px solid #bec0b4;
+    border-top: 2px solid gray;
 }
 
 .container-tech {
@@ -16,15 +16,11 @@
 .container-tech-text {
     color: #333333;
     letter-spacing: 2px;
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 900;
     gap: 1rem;
 }
 
-.container-tech-text p {
-    font-size: 1rem;
-    letter-spacing: 2px;
-}
 
 .container-tech-skill {
     display: grid;
@@ -33,21 +29,12 @@
 }
 
 .nav-img-tech {
-    width: 100px;
+    width: 110px;
     max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 130px;
 }
 
-.container-tech-skill p {
-    width: 5.625rem;
-    color: #333333;
-    letter-spacing: 2px;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    font-weight: 600;
-}
+
 
 @media screen and (max-width:900px) {
     .container-tech-skill {
