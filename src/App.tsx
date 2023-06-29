@@ -6,6 +6,7 @@ import { Tecnologias } from './Componets//TecnologiasS/Tecnologias'
 import { Portfolio } from './Componets/Portfolio/Portfolio'
 import { Contact } from './Componets/Contact/Contact'
 
+
 function App() {
   
   return (
