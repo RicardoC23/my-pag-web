@@ -26,6 +26,9 @@ function Tecnologias() {
                 <div>
                     <img className="nav-img-tech"src = {'../Pictures/react.png'}/>
                 </div>
+                <div>
+                    <img className="nav-img-tech-vue"src = {'../Pictures/vue.jpg'}/>
+                </div>
             </div>
         </div>
     </div>

@@ -1,10 +1,21 @@
 import './Contact.css'
-import  React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import Swal, { SweetAlertOptions }  from 'sweetalert2';
+import emailjs from '@emailjs/browser';
+import { Formik } from 'formik';
+
 
 function Contact() { 
-    
+
+    const sendEmail = (data: any) => {
+        emailjs.send('service_i1vgs8q', 'template_0nzq369', data, '5GV8vtIa_2rWZvuov')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        }
+
     const mostrarAlert = () => {
         Swal.fire({
             title : "Mensaje enviado",
@@ -14,44 +25,6 @@ function Contact() {
         } as SweetAlertOptions ) 
     }
 
-    const [name, setName] = useState<string>("")
-
-    const handleName = (event: React.FormEvent<HTMLInputElement>) => {
-        setName(event.currentTarget.value)
-    }
-
-    const [email, setEmail] = useState<string>("")
-
-    const handleEmail = (event: React.FormEvent<HTMLInputElement>) => {
-        setEmail(event.currentTarget.value)
-    }
-
-    const [tarea, setTarea] = useState<string>("")
-
-    const handleTarea = (event: React.FormEvent<HTMLTextAreaElement>) => {
-        setTarea(event.currentTarget.value)
-    }
-
-
-    const sendEmail = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-
-        emailjs.sendForm('service_6nc1agh', 'template_mzeog0b', event.currentTarget, '5GV8vtIa_2rWZvuov')
-        .then((result) => {
-            setName("")
-            setEmail("")
-            setTarea("")
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-            Swal.fire({
-                title : "Hubo un error",
-                text: "intentelo nuevamente",
-                icon: "error",
-                button: "Aceptar"
-            } as SweetAlertOptions ) 
-        });
-    }
 
 return (
     <div className='container-form'>
@@ -61,21 +34,89 @@ return (
                 <p>Contact me via email.</p>
             </div>
         </div>
-        <form className='Container-contact'   onSubmit={sendEmail}>
-            <div className='container-form-text'>
-                <h2  id='Contact'>Send me an Email</h2>
-            </div>  
-            <div className='container-contact-message'>
-                <div className='container-input'>
-                    <input placeholder='Your Full Name' 
-                    className='form-input' type="text" name="user_name" value= {name} onChange={handleName} />
-                    <input placeholder='Your Email' 
-                    className='form-input' type="email" name="user_email" value = {email} onChange={handleEmail} />
-                    <textarea className='form-text' placeholder='Your Message'  name="message"    value=  {tarea} onChange={handleTarea}/>
-                    <input type="submit" value="Send"  className='button-send' onClick={mostrarAlert}/>
+        <Formik
+            initialValues={{
+                name:"",
+                email:"",
+                message:""
+            }}
+            validate={(valores) =>{
+                let errores = {
+                    
+                };
+                if(!valores.name){
+                    errores.name= "The field 'Name' is required"
+                } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)){
+                    errores.name = "Field 'Name' only accepts letters and blank spaces"
+                }
+                if(!valores.email){
+                    errores.email= "The field 'Email' is required"
+                } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)){
+                    errores.email = "Field 'Email' is incorrect"
+                }
+                if(!valores.message){
+                    errores.message= "The 'Message' field is required"
+                } else if (!/^.{1,500}$/.test(valores.message)){
+                    errores.message = "Field 'message' must not exceed 255 characters"
+                }
+                return errores;
+            }}
+            onSubmit={(valores, { resetForm}) => {
+                sendEmail(valores)
+                resetForm();
+            }}
+        >
+            { ({handleSubmit, errors, touched, values, handleChange, handleBlur}) => (
+                <form  className='Container-contact' onSubmit={handleSubmit}>
+                <div className='container-form-text'>
+                    <h2  id='Contact'>Send me an Email</h2>
+                </div>  
+                <div className='container-contact-message'>
+                    <div className='container-input'>
+                        <input 
+                        placeholder='Name' 
+                        className='form-input' 
+                        type="text" 
+                        name='name'
+                        value={values.name}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        required
+                        />
+                        {touched.name && errors.name && <p className='error'> {errors.name} </p> }
+                        <input 
+                        placeholder='correo@correo.com' 
+                        className='form-input'
+                        type="email"
+                        name='email'
+                        value={values.email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        required
+                        />
+                        {touched.email && errors.email && <p className='error'> {errors.email} </p> }
+                        <textarea 
+                        className='form-text' 
+                        placeholder='Message'
+                        name='message'
+                        value={values.message}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        required
+                        />
+                        {touched.message && errors.message && <p className='error'> {errors.message} </p> }
+                        <input 
+                        type="submit" 
+                        value="Send"  
+                        className='button-send'
+                        onClick={mostrarAlert}
+                        />
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+            )}
+        
+        </Formik>
     </div>
 );
 };
