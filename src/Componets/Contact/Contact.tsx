@@ -41,8 +41,8 @@ return (
                 message:""
             }}
             validate={(valores) =>{
-                let errores = {
-                    
+                let errores: any = {
+            
                 };
                 if(!valores.name){
                     errores.name= "The field 'Name' is required"
