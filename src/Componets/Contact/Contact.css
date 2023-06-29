@@ -79,6 +79,8 @@
     background: #333;
     text-align: start;
     font-size: 16px;
+    resize: none;
+    font-family:inherit ;
 }
 
 .button-send {
@@ -94,6 +96,13 @@
     font-size: 16px;
     font-weight: 800;
 }
+
+.error {
+	color: #e92b2d;
+	font-weight: 600;
+	font-size: 12px;
+}
+
 
 @media screen and (max-width:430px ) {
     .container-contact-message {
