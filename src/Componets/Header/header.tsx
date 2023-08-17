@@ -20,9 +20,8 @@ function Header():JSX.Element {
                         <li><a href="#About-me">About me</a></li>
                         <li><a href="#Contact">Contact</a></li>
                         <div className="container-red">
-                            <li><a href="linkidin.com"><FaLinkedinIn className="icon-social"/></a></li>
-                            <li><a href="facebook.com"><FaGithub className="icon-social"/></a></li>
-                            <li><a href="twiter.com"><FaTwitter className="icon-social"/></a></li>
+                            <li><a href="https://www.linkedin.com/in/ricardo-mamani-calcina-659b16279/" target="_blank"><FaLinkedinIn className="icon-social"/></a></li>
+                            <li><a href="https://github.com/RicardoC23" target="_blank"><FaGithub className="icon-social"/></a></li>
                         </div>
                     </ul>
                 </nav>
